@@ -42,21 +42,6 @@
 </head>
 
 <body>
-<!-- nav search -->
-<div class="zoom-anim-dialog mfp-hide modal-searchPanel" id="modal-popup-2">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="xs-search-panel">
-                <form action="#" method="POST" class="xs-search-group">
-                    <input type="search" class="form-control" name="search" id="search" placeholder="Search">
-                    <button type="submit" class="search-button"><i class="icon icon-search1"></i></button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div><!-- End xs modal -->
-<!-- end language switcher strart -->
-
 
 <!--Home page style-->
 <header id="header" class="header-transparent">
@@ -66,8 +51,8 @@
                 <div class="col-lg-2">
                     <!--  <a class="nav-brand" href="#"></a>-->
                     <div class="logo-area">
-                        <a href="index.html" class="logo">
-                            <img class="img-fluid" src="{{ asset('images/footer_logo.png') }}" alt="">
+                        <a href="#" class="logo">
+                            <img height="50" src="{{ asset('images/logos/logo-white.svg') }}" alt="">
                         </a>
                     </div>
                 </div><!-- Col end -->
@@ -76,17 +61,17 @@
                         <ul class="header-nav-right-info">
                             <li>
                                 <i class="icon icon-phone2"></i>
-                                <span>+1 (212) 255-5511</span>
+                                <a href="tel:+92-308-8488877">+92-308-8488877</a>
                                 Make a call
                             </li>
                             <li>
                                 <i class="icon icon-envelope2"></i>
-                                <span>contact@domain.com</span>
+                                <a href="mailto:info@thepropertz.com">info@thepropertz.com</a>
                                 Drop us a line
                             </li>
                             <li>
                                 <i class="icon icon-map-marker1"></i>
-                                <span>1105 Roosevelt Street CA</span>
+                                <span>Kaleem Shaheed Colony 2 Faisalabad</span>
                                 Get Dirction
                             </li>
                         </ul>
@@ -108,70 +93,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="dropdown nav-item active">
-                            <a href="#" class="" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu active" role="menu">
-                                <li class="active"><a href="index.html">Home One</a></li>
-                                <li><a href="index-2.html">Home Two</a></li>
-                                <li><a href="index-3.html">Home Three</a></li>
-                                <li><a href="index-4.html">Home Four</a></li>
-                                <li><a href="index-5.html">Home Five</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown nav-item">
-                            <a href="#" class="" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="pricing.html">Pricing Table</a></li>
-                                <li><a href="testimonial.html">Testimonial</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="" data-toggle="dropdown">Solutions <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="service-details.html">Service Details</a></li>
-                            </ul>
-
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="" data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="project-1.html">Project 1</a></li>
-                                <li><a href="project-2.html">Project 2</a></li>
-                                <li><a href="project-details.html">Project Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="typography.html">Typography</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="blog-left-sidebar.html" class="" data-toggle="dropdown"> Blog <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="blog-left-sidebar.html" class="" data-toggle="dropdown"> Contact <i class="fa fa-angle-down"></i> </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="contact-1.html">Contact 1</a></li>
-                                <li><a href="contact-2.html">Contact 2</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item active"><a href="{{ route('page-index') }}">Home </a></li>
+                        <li class="nav-item"><a href="#"> Services</a></li>
+                        <li class="nav-item"><a href="#"> Projects</a></li>
+                        <li class="nav-item"><a href="#"> Team</a></li>
+                        <li class="nav-item"><a href="#"> Contact Us</a></li>
+                        <li class="nav-item"><a href="#"> About Us</a></li>
                     </ul>
                     <ul class="nav-right ml-auto form-inline">
-                        <li class="nav-search-btn">
-                            <a href="#modal-popup-2" class="xs-modal-popup"><i class="icon icon-search1"></i></a>
-                            <!-- xs modal -->
-                        </li>
                         <li class="nav-button">
                             <a href="#" class="quote-btn">Get a Quote</a>
                         </li>
@@ -1214,14 +1143,14 @@
             <div class="col-md-12 col-lg-4">
                 <!-- End Footer info -->
                 <a href="index.html" class="footer-logo">
-                    <img src="{{ asset('images/footer_logo.png') }}" alt="footer_logo" class="img-fluid">
+                    <img height="50" src="{{ asset('images/logos/logo-white.svg') }}" alt="">
                 </a>
                 <div class="widget-details">
                     <h3 class="widget-title">Head Office</h3>
                     <ul>
-                        <li>1010 Avenue, NY, USA</li>
-                        <li>Tel : <span>009-215-5596</span></li>
-                        <li>Email : <span>info@example.com</span></li>
+                        <li>Kaleem Shaheed Colony 2 Faisalabad</li>
+                        <li>Tel : <a href="tel:+92-308-8488877">+92-308-8488877</a></li>
+                        <li>Email : <a href="mailto:info@thepropertz.com">info@thepropertz.com</a></li>
                     </ul>
                     <h3>
                         Business Hour
@@ -1286,9 +1215,9 @@
                         </form>
                         <!-- END copy section: General Contact Form -->
                     </div>
-                    <h4 class="call-us">or
-                        <span> Call Us : +00 172839</span>
-                    </h4>
+                    <a href="+92-308-8488877" class="call-us">or
+                        <span> Call Us : +92-308-8488877</span>
+                    </a>
                     <img src="{{ asset('images/icon-image/newsletter-bg.png') }}" alt="">
 
                 </div>
@@ -1304,7 +1233,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <span>Copyright © 2019 <a href="#">Build Bench</a>. All Right Reserved.</span>
+                <span>Copyright © {{ now() ->format('Y')}} <a href="#">The Propertz</a>. All Right Reserved.</span>
             </div>
             <!-- End Col -->
             <div class="col-md-6">
