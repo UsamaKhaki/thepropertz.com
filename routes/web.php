@@ -16,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['as' => 'page-'], function () {
     Route::get('/', [MainController::class, 'index'])->name('index');
+    Route::get('/about-us', [MainController::class, 'aboutUs'])->name('about-us');
+    Route::get('/contact-us', [MainController::class, 'contactUs'])->name('contact-us');
+    Route::get('/developers', [MainController::class, 'developers'])->name('developers');
+    Route::get('/consultancy', [MainController::class, 'consultancy'])->name('consultancy');
+    Route::get('/service-provision', [MainController::class, 'serviceProvision'])->name('service-provision');
 });
