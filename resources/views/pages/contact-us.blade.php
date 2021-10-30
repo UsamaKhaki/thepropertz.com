@@ -44,7 +44,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-6 mt-4 mt-md-0">
                                                 <div class="contact-info-box">
                                                     <div class="info-details ts-mb-30">
                                                         <h4 class="info-title">Phone</h4>
@@ -69,7 +69,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="gmap_canvas">
-                                    <iframe width="545" height="290" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.162933886253!2d73.01430841514862!3d31.43718108139712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922430b95681647%3A0x13f71e23c550fe60!2sJawad%20Club%20Rd%2C%20Faisalabad%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sae!4v1635598356539!5m2!1sen!2sae" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                    <iframe width="100%" height="290" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.162933886253!2d73.01430841514862!3d31.43718108139712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922430b95681647%3A0x13f71e23c550fe60!2sJawad%20Club%20Rd%2C%20Faisalabad%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sae!4v1635598356539!5m2!1sen!2sae" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                                     </iframe>
                                 </div>
                             </div>

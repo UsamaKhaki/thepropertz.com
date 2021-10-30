@@ -11,9 +11,8 @@
                     <h3 class="widget-title">Head Office</h3>
                     <ul>
                         <li>{{ config('appConst.address') }}</li>
-                        <li>Tel : <a href="tel:{{ config('appConst.phone_number') }}">{{ config('appConst.phone_number') }}</a></li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="tel:{{ config('appConst.phone_number_2') }}">{{ config('appConst.phone_number_2') }}</a></li>
-                        <li>Email : <a href="mailto:{{ config('appConst.email') }}">{{ config('appConst.email') }}</a></li>
+                        <li>Tel : <a class="text-white" href="tel:{{ config('appConst.phone_number') }}">{{ config('appConst.phone_number') }}</a> - <a class="text-white" href="tel:{{ config('appConst.phone_number_2') }}">{{ config('appConst.phone_number_2') }}</a></li>
+                        <li>Email : <a class="text-white" href="mailto:{{ config('appConst.email') }}">{{ config('appConst.email') }}</a></li>
                     </ul>
                     <h3>
                         Business Hour
