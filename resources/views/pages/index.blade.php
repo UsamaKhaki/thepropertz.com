@@ -229,7 +229,7 @@
                     </div>--}}
                 </div>
             </div><!-- row end-->
-            <div class="row" id="mixcontent">
+            <div class="row justify-content-center" id="mixcontent">
                 <div class="col-lg-3 mix cat3 cat2 col-sm-6 mb-10">
                     <div class="ts-image-popup" data-effect="mfp-zoom-in">
                         <div class="single-recent-work">
