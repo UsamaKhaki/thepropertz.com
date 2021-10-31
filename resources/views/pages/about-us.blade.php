@@ -21,7 +21,7 @@
                             company in the world</h2>
                         <h3 class="intro-desc">{{ config('app.name') }} is an organization of well dynamic and well established companies.</h3>
                         <p>
-                            The company conducting business of consultancy, marketing, developing and service initially in the area of real estate and verity of
+                            Our company conducting business of consultancy, marketing, developing and service initially in the area of real estate and verity of
                             business in future endeavour with facilities across the country.
                         </p>
                         <a href="#" class="btn btn-primary">Our Services<i class="icon icon-arrow-right"></i></a>

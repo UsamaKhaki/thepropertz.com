@@ -20,7 +20,7 @@
                                     </p>
                                     <div class="btn-area">
                                         <a href="{{ route('page-service-provision') }}" class="btn btn-primary">
-                                            Our Servies
+                                            Our Services
                                             <i class="icon icon-arrow-right"></i>
                                         </a>
                                         <a href="{{ route('page-contact-us') }}" class="btn btn-border">

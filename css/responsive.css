@@ -548,7 +548,7 @@
     }
 
     .navbar-toggler:not(:disabled):not(.disabled) {
-        background: #ffb923;
+        background: #dddddd;
     }
 
     .ts-aboutus {

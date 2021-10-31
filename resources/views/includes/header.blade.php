@@ -9,6 +9,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
 
+    <!-- SEO -->
+    <title>The ProperTz</title>
+    <meta name="description" content="Our company conducting business of consultancy, marketing, developing and service initially in the area of real estate and verity of business in future endeavour with facilities across the country.">
+    <meta name="keywords" content="">
+    <meta itemprop="name" content="The ProperTz">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <link rel="canonical" href="{{ url()->current() }}"/>
+
+    <!-- Facebook -->
+    <meta property="og:title" content="The ProperTz" />
+    <meta property="og:description" content="Our company conducting business of consultancy, marketing, developing and service initially in the area of real estate and verity of business in future endeavour with facilities across the country." />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="" />
+
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="The ProperTz" />
+    <meta name="twitter:description" content="Our company conducting business of consultancy, marketing, developing and service initially in the area of real estate and verity of business in future endeavour with facilities across the country." />
+    <meta name="twitter:url" content="{{ url()->current() }}" />
+    <meta name="twitter:card" content="card" />
+    <meta name="twitter:images0" content="" />
+
     <!-- Mobile Specific Metas ================================-->
 
     <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
@@ -32,7 +55,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css?v=1.3') }}">
 
     <!--Theme Responsive css-->
-    <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.2') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.3') }}">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
