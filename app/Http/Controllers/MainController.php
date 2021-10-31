@@ -19,7 +19,7 @@ class MainController extends Controller
         return view('pages.index');
     }
     public function consultancy(){
-        return view('pages.index');
+        return view('pages.consultancy');
     }
     public function serviceProvision(){
         return view('pages.service-provision');

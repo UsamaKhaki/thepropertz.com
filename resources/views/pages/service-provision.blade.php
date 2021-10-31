@@ -3,11 +3,11 @@
 
     <x-header-component
         background="{{ asset('images/banner/banner_img.jpg') }}"
-        title="Services"
+        title="Service Provisions"
     >
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
-            <li>Services</li>
+            <li>Service Provisions</li>
         </ol>
     </x-header-component>
 
@@ -21,82 +21,35 @@
                 </div><!-- col end -->
             </div><!-- row end -->
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="ts-service-box-img pull-left">
-                            <img src="images/icon-image/service1.png" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Building Staffs</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 1 end -->
-                </div>
-                <!-- Col end -->
+                @php
+                    $services = [
+                        (object)['title' => 'Architecture', 'image' => 'architect-img.jpg'],
+                        (object)['title' => 'Shuttering', 'image' => 'shuttering.jpg'],
+                        (object)['title' => 'Electrician', 'image' => 'electrician.jpg'],
+                        (object)['title' => 'Iron Fixer', 'image' => 'iron-fixer.jpg'],
+                        (object)['title' => 'Sanitary Fitter', 'image' => 'sanitary-fitter.jpg'],
+                        (object)['title' => 'Aluminium & Steel Fitter', 'image' => 'alluminium-fitter.jpg'],
+                        (object)['title' => 'Carpenter', 'image' => 'carpenter.jpg'],
+                        (object)['title' => 'Ceiling Decoration', 'image' => 'ceiling-image.jpg'],
+                        (object)['title' => 'Passenger Elevator', 'image' => 'escalator.jpg'],
+                        (object)['title' => 'Solar, Generator & UPS', 'image' => 'solar-generators-ups.jpg'],
+                    ];
+                @endphp
+                @foreach($services as $item)
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="ts-service-box pb-60">
+                            <div class="srevice-img">
+                                <img class="img-fluid" src="{{ asset('images/service/'.$item->image) }}" alt="">
+                            </div>
+                            <div class="ts-service-box-info">
+                                <h3 class="ts-title mb-1"><a href="#">{{ $item->title }}</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div><!-- Service 1 end -->
+                    </div>
+            @endforeach
+            <!-- Col end -->
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="ts-service-box-img pull-left">
-                            <img src="images/icon-image/service4.png" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Material Supply</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 2 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="ts-service-box-img pull-left">
-                            <img src="images/icon-image/service2.png" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Land Minning</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 1 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box">
-                        <div class="ts-service-box-img pull-left">
-                            <img src="images/icon-image/service5.png" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Crane Service</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 2 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box">
-                        <div class="ts-service-box-img pull-left">
-                            <img src="images/icon-image/service3.png" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Architecture</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 1 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box">
-                        <div class="ts-service-box-img pull-left">
-                            <img src="images/icon-image/service6.png" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Consultancy</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 2 end -->
-                </div><!-- Col end -->
             </div>
             <!-- Row end -->
         </div>
@@ -104,7 +57,7 @@
     </section>
     <!-- Section end -->
 
-    <section id="ts-testimonial-standard" class="ts-testimonial-standard section-padding"
+    {{--<section id="ts-testimonial-standard" class="ts-testimonial-standard section-padding"
              style="background: url(images/testimonial/testimonial_bg2.jpg);background-attachment: inherit; background-size: cover;">
         <div class="container">
             <div class="row">
@@ -145,7 +98,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
     <!-- Testimonial End -->
 
     <!-- client start -->

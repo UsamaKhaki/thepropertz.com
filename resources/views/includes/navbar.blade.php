@@ -9,7 +9,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a href="{{ route('page-index') }}">Home </a></li>
-                    <li class="nav-item"><a href=""> Consultancy</a></li>
+                    <li class="nav-item"><a href="{{ route('page-consultancy') }}"> Consultancy</a></li>
                     <li class="nav-item"><a href=""> Developers</a></li>
                     <li class="nav-item"><a href="{{ route('page-service-provision') }}"> Service Provision</a></li>
                     <li class="nav-item"><a href="{{ route('page-about-us') }}"> About Us</a></li>

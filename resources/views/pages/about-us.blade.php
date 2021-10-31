@@ -19,10 +19,11 @@
                     <div class="about-intro">
                         <h2 class="column-title"><span>About Us</span> We are leading International
                             company in the world</h2>
-                        <h3 class="intro-desc">Benefit of the socie where we operate. A success website obusly needs
-                            great design to be one of the top 10.</h3>
-                        <p>We have a long and proud history givin emphasis to environment social and economic outcomes
-                            to deliver places that respond too the complex global forces shaping our future</p>
+                        <h3 class="intro-desc">{{ config('app.name') }} is an organization of well dynamic and well established companies.</h3>
+                        <p>
+                            The company conducting business of consultancy, marketing, developing and service initially in the area of real estate and verity of
+                            business in future endeavour with facilities across the country.
+                        </p>
                         <a href="#" class="btn btn-primary">Our Services<i class="icon icon-arrow-right"></i></a>
                         <a href="#" class="btn btn-dark">Contact Us<i class="icon icon-arrow-right"></i></a>
                     </div>
@@ -35,9 +36,11 @@
                                 <img src="{{ asset('images/features/features_icon1.png') }}" alt="">
                             </span>
                             <div class="about-feature-content">
-                                <h3 class="ts-title">Building Staffs</h3>
-                                <p>We have a long and proud histiry givin emphasis to envi ronment social and economic
-                                    outcomes.</p>
+                                <h3 class="ts-title">Consultant</h3>
+                                <p>
+                                    We provide consultancy and marketing assistance to our client honorable customers, clients and investors for buying & selling
+                                    all type of properties (Residential, Commercial, Industrial, Agricultural and Farms.
+                                </p>
                             </div> <!-- Feature content end -->
                         </div> <!-- Feature Info End -->
                     </div>
@@ -47,9 +50,11 @@
                                 <img src="{{ asset('images/features/features_icon2.png') }}" alt="">
                             </span>
                             <div class="about-feature-content">
-                                <h3 class="ts-title">Building Staffs</h3>
-                                <p>We have a long and proud histiry givin emphasis to envi ronment social and economic
-                                    outcomes.</p>
+                                <h3 class="ts-title">Developers</h3>
+                                <p>
+                                    We have capabilities to accomplish a “ Turn Key " project as well as individual segment of real estate business.
+                                    We provide assistance in architecting, building construction, town planning and land development / management.
+                                </p>
                             </div> <!-- Feature content end -->
                         </div> <!-- Feature Info End -->
                     </div>
@@ -59,9 +64,11 @@
                                 <img src="{{ asset('images/features/features_icon3.png') }}" alt="">
                             </span>
                             <div class="about-feature-content">
-                                <h3 class="ts-title">Building Staffs</h3>
-                                <p>We have a long and proud histiry givin emphasis to envi ronment social and economic
-                                    outcomes.</p>
+                                <h3 class="ts-title">Service Providers</h3>
+                                <p>
+                                    We have the required expertise and resources to deliver quality, efficient and competitive services, Our team is powered with
+                                    competent, motivated and highly qualified professional in the field of engineering services.
+                                </p>
                             </div> <!-- Feature content end -->
                         </div> <!-- Feature Info End -->
                     </div>

@@ -700,9 +700,9 @@ body.boxed-layout {
     position: relative;
 }
 
-.ts-service .ts-service-box .ts-service-box-info {
-    padding-left: 80px;
-}
+/*.ts-service .ts-service-box .ts-service-box-info {*/
+/*    padding-left: 80px;*/
+/*}*/
 
 .ts-service .ts-service-box .ts-service-box-info .ts-title a {
     font-size: 20px;

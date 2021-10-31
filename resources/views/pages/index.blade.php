@@ -19,11 +19,11 @@
                                         design to be one top10 IT companies in The world
                                     </p>
                                     <div class="btn-area">
-                                        <a href="#" class="btn btn-primary">
+                                        <a href="{{ route('page-service-provision') }}" class="btn btn-primary">
                                             Our Servies
                                             <i class="icon icon-arrow-right"></i>
                                         </a>
-                                        <a href="#" class="btn btn-border">
+                                        <a href="{{ route('page-contact-us') }}" class="btn btn-border">
                                             Contact Us
                                             <i class="icon icon-arrow-right"></i>
                                         </a>
@@ -53,7 +53,7 @@
                         <div class="intro-text">
                             <h2 class="column-title">
                                 <span>Our proud</span>
-                                25 years of undefeated
+                                3 years of undefeated
                                 success
                             </h2>
                             <p>
@@ -71,28 +71,28 @@
                             <li>
                                 <div class="single-funfact">
                                     <i class="icon icon-Funfacts-3"></i>
-                                    <h3 class="funfact-title" data-counter="525">525<sup>+</sup></h3>
+                                    <h3 class="funfact-title" data-counter="15">15<sup>+</sup></h3>
                                     <p>Successfully Project Finished</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-funfact">
                                     <i class="icon icon-Funfacts-4"></i>
-                                    <h3 class="funfact-title" data-counter="25">25<sup>+</sup></h3>
+                                    <h3 class="funfact-title" data-counter="3">3<sup>+</sup></h3>
                                     <p>Year of experience With Proud</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-funfact">
                                     <i class="icon icon-Funfacts"></i>
-                                    <h3 class="funfact-title" data-counter="1120">$1120</h3>
+                                    <h3 class="funfact-title" data-counter="10">10</h3>
                                     <p>Revenue (Million) And Investment</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="single-funfact">
                                     <i class="icon icon-Funfacts-2"></i>
-                                    <h3 class="funfact-title" data-counter="1520">1520</h3>
+                                    <h3 class="funfact-title" data-counter="45">45</h3>
                                     <p>Collaegues & Counting</p>
                                 </div>
                             </li>
@@ -126,100 +126,35 @@
                 </div><!-- col end -->
             </div><!-- row end -->
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="srevice-img">
-                            <img class="img-fluid" src="{{ asset('images/service/service1.jpg') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-img pull-left">
-                            <img src="{{ asset('images/icon-image/service1.png') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Building Staffs</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 1 end -->
-                </div>
+                @php
+                    $services = [
+                        (object)['title' => 'Architecture', 'image' => 'architect-img.jpg'],
+                        // (object)['title' => 'Shuttering'],
+                        (object)['title' => 'Electrician', 'image' => 'electrician.jpg'],
+                        // (object)['title' => 'Iron Fitter'],
+                        (object)['title' => 'Sanitary Fitter', 'image' => 'sanitary-fitter.jpg'],
+                        (object)['title' => 'Aluminium & Steel Fitter', 'image' => 'alluminium-fitter.jpg'],
+                        // (object)['title' => 'Carpenter'],
+                        (object)['title' => 'Ceiling Decoration', 'image' => 'ceiling-image.jpg'],
+                        // (object)['title' => 'Passenger Elevator'],
+                        (object)['title' => 'Solar, Generator & UPS', 'image' => 'solar-generators-ups.jpg'],
+                    ];
+                @endphp
+                @foreach($services as $item)
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="ts-service-box pb-60">
+                            <div class="srevice-img">
+                                <img class="img-fluid" src="{{ asset('images/service/'.$item->image) }}" alt="">
+                            </div>
+                            <div class="ts-service-box-info">
+                                <h3 class="ts-title"><a href="#">{{ $item->title }}</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div><!-- Service 1 end -->
+                    </div>
+                @endforeach
                 <!-- Col end -->
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="srevice-img">
-                            <img class="img-fluid" src="{{ asset('images/service/service2.jpg') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-img pull-left">
-                            <img src="{{ asset('images/icon-image/service4.png') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Material Supply</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 2 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="srevice-img">
-                            <img class="img-fluid" src="{{ asset('images/service/service3.jpg') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-img pull-left">
-                            <img src="{{ asset('images/icon-image/service2.png') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Land Minning</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 1 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="srevice-img">
-                            <img class="img-fluid" src="{{ asset('images/service/service4.jpg') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-img pull-left">
-                            <img src="{{ asset('images/icon-image/service5.png') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Crane Service</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 2 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="srevice-img">
-                            <img class="img-fluid" src="{{ asset('images/service/service5.jpg') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-img pull-left">
-                            <img src="{{ asset('images/icon-image/service3.png') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Architecture</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 1 end -->
-                </div>
-                <!-- Col end -->
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="ts-service-box pb-60">
-                        <div class="srevice-img">
-                            <img class="img-fluid" src="{{ asset('images/service/service6.jpg') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-img pull-left">
-                            <img src="{{ asset('images/icon-image/service6.png') }}" alt="">
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="ts-title"><a href="#">Consultancy</a></h3>
-                            <p>Benefit of the socie where we oper ate success for the website</p>
-                        </div>
-                    </div><!-- Service 2 end -->
-                </div><!-- Col end -->
             </div>
             <!-- Row end -->
         </div>
@@ -278,13 +213,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-item">
-
                         <h2 class="section-title">
                             <span class="ts-title">Our Works</span>
                             Latest Projects
                         </h2>
                     </div>
-                    <div class="recent-folio-menu">
+                    {{--<div class="recent-folio-menu">
                         <ul>
                             <li class="active filter" data-filter="all">All Projects </li>
                             <li class="filter" data-filter=".cat1">Minning</li>
@@ -292,137 +226,31 @@
                             <li class="filter" data-filter=".cat3">Home</li>
                             <li class="filter" data-filter=".cat4">Bridge </li>
                         </ul>
-                    </div>
+                    </div>--}}
                 </div>
             </div><!-- row end-->
             <div class="row" id="mixcontent">
                 <div class="col-lg-3 mix cat3 cat2 col-sm-6 mb-10">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
+                    <div class="ts-image-popup" data-effect="mfp-zoom-in">
                         <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_1.jpg') }}" alt="">
+                            <img src="{{ asset('images/projects/safiya-homes-project.jpg') }}" alt="">
                             <div class="recet-work-footer">
                                 <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
-                                </h4>
-
-                            </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 mix cat3 cat2 cat4 col-sm-6 mb-10">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_2.jpg') }}" alt="">
-                            <div class="recet-work-footer">
-                                <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
+                                <h4>
+                                    Safiya Homes
+                                    <span>Faisalabad, Pakistan</span>
                                 </h4>
                             </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
+                            {{--<span class="link-more"><i class="icon icon-right-arrow2"></i></span>--}}
                         </div>
-                    </a>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 mix cat3 cat1 cat2 col-sm-6 mb-10">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_3.jpg') }}" alt="">
-                            <div class="recet-work-footer">
-                                <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
-                                </h4>
-                            </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 mix cat3 cat1 cat2 col-sm-6 mb-10">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_4.jpg') }}" alt="">
-                            <div class="recet-work-footer">
-                                <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
-                                </h4>
-                            </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 mix cat3 cat1 col-sm-6">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_5.jpg') }}" alt="">
-                            <div class="recet-work-footer">
-                                <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
-                                </h4>
-                            </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 mix cat1 cat2 col-sm-6">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_6.jpg') }}" alt="">
-                            <div class="recet-work-footer">
-                                <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
-                                </h4>
-                            </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 mix cat3 cat4 col-sm-6">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_7.jpg') }}" alt="">
-                            <div class="recet-work-footer">
-                                <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
-                                </h4>
-                            </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 mix cat4 cat2 col-sm-6">
-                    <a href="#" class="ts-image-popup" data-effect="mfp-zoom-in">
-                        <div class="single-recent-work">
-                            <img src="{{ asset('images/projects/project_img_8.jpg') }}" alt="">
-                            <div class="recet-work-footer">
-                                <i class="icon-Our_service_3"></i>
-                                <h4>Oxford Science Lab Building
-                                    <span>New Jursey,NY</span>
-                                </h4>
-                            </div>
-                            <span class="link-more"><i class="icon icon-right-arrow2"></i></span>
-                        </div>
-                    </a>
-                </div>
-
             </div><!-- row end-->
         </div><!-- .container end -->
 
     </section><!-- Project area end -->
 
-    <section id="ts-cta-area" class="ts-cta-area no-padding">
+    {{--<section id="ts-cta-area" class="ts-cta-area no-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -436,7 +264,7 @@
                 </div><!-- col end -->
                 <div class="col-lg-5 align-self-center">
                     <div class="cta-btn text-right">
-                        <a href="#" class="btn btn-primary">
+                        <a href="{{ route('page-contact-us') }}" class="btn btn-primary">
                             Contact Us
                             <i class="icon icon-arrow-right"></i>
                         </a>
@@ -446,7 +274,7 @@
             <!--/ Content row end -->
         </div>
         <!--/ Container end -->
-    </section>
+    </section>--}}
     <!-- Section end -->
 
     {{--<section id="ts-working-process" class="ts-working-process section-padding">
@@ -580,6 +408,42 @@
         </div>
     </section>--}}
     <!-- Testimonial End -->
+    <section id="ts-team-classic" class="ts-team ts-team-classic section-padding" style="background: url('{{ asset('images/team/team_bg.jpg') }}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title title-white">
+                        <span class="ts-title">Our Team</span>
+                        Board of Directors
+                    </h2>
+                </div>
+            </div><!-- row end-->
+            <div class="row justify-content-center">
+                <div class="col-lg-3">
+                    <div class="ts-team">
+                        <div class="team-img-wrapper">
+                            <img class="img-fluid" alt="" src="{{ asset('images/team/qayyum-toor.jpg') }}">
+                        </div>
+                        <div class="ts-team-info text-center">
+                            <h4 class="team-name color-white">Ch Abdul Qayyum Toor</h4>
+                            <p class="team-designation color-white mb-0">CEO & Founder</p>
+                        </div><!-- Team info 1 end-->
+                    </div><!-- Team end-->
+                </div><!-- Col end-->
+                <div class="col-lg-3">
+                    <div class="ts-team">
+                        <div class="team-img-wrapper">
+                            <img class="img-fluid" alt="" src="{{ asset('images/team/saghir-khaki.jpg') }}">
+                        </div>
+                        <div class="ts-team-info text-center">
+                            <h4 class="team-name color-white">Saghir Khaki</h4>
+                            <p class="team-designation color-white mb-0">Co Founder</p>
+                        </div><!-- Team info 1 end-->
+                    </div><!-- Team end-->
+                </div><!-- Col end-->
+            </div> <!-- Row End -->
+        </div><!-- Container end -->
+    </section>
 
     <!-- Partners start -->
     <section id="ts-partner-area" class="ts-partner-area pt-80 pb-80">
