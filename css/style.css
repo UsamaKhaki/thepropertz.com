@@ -4669,7 +4669,7 @@ ul.navbar-nav {
 }
 
 .property_box h3 a:hover {
-    color: #ffb900;
+    color: #64b5e2;
 }
 
 .property_box .property_location i {
@@ -4709,7 +4709,7 @@ ul.navbar-nav {
     top: 30px;
     right: 26px;
     border-radius: 25px;
-    z-index: 100;
+    z-index: 10;
     background: #2b2727;
     padding: 5px 10px;
     color: white;
