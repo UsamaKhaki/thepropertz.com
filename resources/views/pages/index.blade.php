@@ -126,7 +126,7 @@
                         <div class="property_box">
                             <div class="property_price"><b>PKR</b> {{ $i }},00,0000</div>
                             <div class="propertyImg">
-                                <img alt="" src="{{ asset('images/properties/propertyImg01.jpg') }}">
+                                <img alt="" src="{{ asset('images/properties/propertyImg0'.$i.'.jpg') }}">
                             </div>
                             <h3><a href="#">Upper portion Apartment for sale</a></h3>
                             <div class="property_location"><i class="fa fa-map-marker" aria-hidden="true"></i> Staten Island / Queens</div>
