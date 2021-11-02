@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\PropertiesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,10 @@ Route::group(['as' => 'page-'], function () {
     Route::get('/developers', [MainController::class, 'developers'])->name('developers');
     Route::get('/consultancy', [MainController::class, 'consultancy'])->name('consultancy');
     Route::get('/service-provision', [MainController::class, 'serviceProvision'])->name('service-provision');
+
+    Route::group(['prefix'=> 'properties', 'as' => 'properties-'], function () {
+        Route::get('/', [PropertiesController::class, 'listing'])->name('listing');
+        Route::get('/detail/{id}', [PropertiesController::class, 'detail'])->name('detail');
+    });
+
 });

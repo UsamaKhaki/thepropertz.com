@@ -1,5 +1,5 @@
 
-<footer id="ts-footer" class="ts-footer" style="background: url(images/footer_img.jpg?v=1.1); background-size: cover; background-position: bottom">
+<footer id="ts-footer" class="ts-footer" style="background: url('{{ asset('images/footer_img.jpg?v=1.1') }}'); background-size: cover; background-position: bottom">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-4">

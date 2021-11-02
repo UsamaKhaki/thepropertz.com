@@ -128,7 +128,7 @@
                             <div class="propertyImg">
                                 <img alt="" src="{{ asset('images/properties/propertyImg0'.$i.'.jpg') }}">
                             </div>
-                            <h3><a href="#">Upper portion Apartment for sale</a></h3>
+                            <h3><a href="{{ route('page-properties-detail', ['id' => $i]) }}">Upper portion Apartment for sale</a></h3>
                             <div class="property_location"><i class="fa fa-map-marker" aria-hidden="true"></i> Staten Island / Queens</div>
                             <div class="propert_info">
                                 <ul class="row">
