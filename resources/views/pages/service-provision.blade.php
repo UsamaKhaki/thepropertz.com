@@ -6,7 +6,7 @@
         title="Service Provisions"
     >
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="{{ route('page-index') }}">Home</a></li>
             <li>Service Provisions</li>
         </ol>
     </x-header-component>

@@ -6,7 +6,7 @@
         title="Upper portion Apartment for sale"
     >
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="{{ route('page-index') }}">Home</a></li>
             <li><a href="#">Properties</a></li>
             <li>Detail</li>
         </ol>
@@ -21,6 +21,7 @@
                             @for($i = 1; $i < 4; $i++)
                                 <li> <img alt="" class="img-h-400" src="{{ asset('images/properties/propertyImg0'.$i.'.jpg') }}"> </li>
                             @endfor
+                            <li> <img alt="" class="img-h-400" src="{{ asset('images/properties/propertyImg01.jpg') }}"> </li>
                         </ul>
                     </div>
                     <div id="carousel" class="flexslider">
@@ -28,6 +29,7 @@
                             @for($i = 1; $i < 4; $i++)
                                 <li> <img alt="" class="img-h-100" src="{{ asset('images/properties/propertyImg0'.$i.'.jpg') }}"> </li>
                             @endfor
+                            <li> <img alt="" class="img-h-100" src="{{ asset('images/properties/propertyImg01.jpg') }}"> </li>
                         </ul>
                     </div>
                     <div class="row property_head mt-4">

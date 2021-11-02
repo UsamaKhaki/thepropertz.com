@@ -6,7 +6,7 @@
         title="About Us"
     >
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="{{ route('page-index') }}">Home</a></li>
             <li>About</li>
         </ol>
     </x-header-component>

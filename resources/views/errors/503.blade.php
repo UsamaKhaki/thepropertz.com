@@ -6,7 +6,7 @@
         title="503"
     >
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="{{ route('page-index') }}">Home</a></li>
             <li>Error 503</li>
         </ol>
     </x-header-component>

@@ -6,7 +6,7 @@
         title="404"
     >
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="{{ route('page-index') }}">Home</a></li>
             <li>Error 404</li>
         </ol>
     </x-header-component>
