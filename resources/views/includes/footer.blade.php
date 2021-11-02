@@ -132,5 +132,7 @@
         sidebarActive('{{ url()->current() }}')
     })
 </script>
+@stack('plugin-js')
+@stack('footer-js')
 </body>
 </html>

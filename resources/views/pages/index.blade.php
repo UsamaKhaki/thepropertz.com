@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
     <div id="hero-slider" class="hero-slider owl-carousel features-slider">
         <!-- slider item start -->
         <div class="slider-item" style="background-image: url('{{ asset('images/slider/slider4.jpg') }}');">
@@ -40,7 +39,6 @@
         </div>
     </div>
     <!-- Slider section end -->
-
     <div class="intro-about-area">
         <!-- intro  start -->
         <div class="intro-about">
@@ -112,6 +110,102 @@
     </div>
     <!-- Intro about area end -->
 
+
+    <section class="property-listing-area pt-80 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="service-intro text-center">
+                        <h2 class="section-title"><span>Recent Listed</span> Featured Properties</h2>
+                    </div>
+                </div><!-- col end -->
+            </div><!-- row end -->
+            <div class="row">
+                @for($i = 1; $i < 4; $i++)
+                    <div class="col-12 col-md-4">
+                        <div class="property_box">
+                            <div class="property_price"><b>PKR</b> {{ $i }},00,0000</div>
+                            <div class="propertyImg">
+                                <img alt="" src="{{ asset('images/properties/propertyImg01.jpg') }}">
+                            </div>
+                            <h3><a href="#">Upper portion Apartment for sale</a></h3>
+                            <div class="property_location"><i class="fa fa-map-marker" aria-hidden="true"></i> Staten Island / Queens</div>
+                            <div class="propert_info">
+                                <ul class="row">
+                                    <li class="col-4">
+                                        <div class="proprty_icon"><img alt="" src="{{ asset('images/icon-image/bedroom_icon.png') }}"></div>
+                                        <h5>Bedrooms 3</h5>
+                                    </li>
+                                    <li class="col-4">
+                                        <div class="proprty_icon"><img alt="" src="{{ asset('images/icon-image/bathroom_icon.png') }}"></div>
+                                        <h5>Bathrooms 2</h5>
+                                    </li>
+                                    <li class="col-4">
+                                        <div class="proprty_icon"><img alt="" src="{{ asset('images/icon-image/garage_icon.png') }}"></div>
+                                        <h5>Garage 1</h5>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="rent_info">
+                                <div class="apart">Apartment</div>
+                                <div class="sale">For Sale</div>
+                            </div>
+                        </div>
+                    </div>
+                @endfor
+            </div>
+            <div class="text-center mt-50">
+                <a href="#" class="btn btn-primary">View All<i class="icon icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ts-feature-block" class="ts-feature-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6" style="background: url(images/features/feature-block-bg1.jpg);background-size:cover">
+                    <div class="feature-block-intro">
+                        <h2 class="column-title"><span>Sustainability</span> Committed to keep people
+                            healthy & safe</h2>
+                        <p>Benefit of the socie where we operate. A success website obusly needs great design to be one</p>
+                        <a href="#" class="btn btn-primary">Work With Us<i class="icon icon-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="background: url(images/features/feature-block-bg2.jpg);background-size:cover">
+                    <div class="feature-block-desc">
+                        <h2 class="feature-block-title">We are best in the field</h2>
+                        <p>Benefit of the socie where we operate. A success website obusly needs great design to be one
+                            of the top 10 IT</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="single-block-desc">
+                                    <h3><img src="{{ asset('images/features/best_icon1.png') }}" alt=""> Sustainability</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="single-block-desc">
+                                    <h3><img src="{{ asset('images/features/best_icon2.png') }}" alt=""> Project on time</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="single-block-desc">
+                                    <h3><img src="{{ asset('images/features/best_icon3.png') }}" alt=""> Modern Tech</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="single-block-desc">
+                                    <h3><img src="{{ asset('images/features/best_icon4.png') }}" alt=""> Latest Design</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Feature Block End -->
+
     <section id="ts-service-quality" class="ts-service ts-service-quality pt-80 pb-20">
         <div class="container">
 
@@ -162,53 +256,34 @@
     </section>
     <!-- Section end -->
 
-    <section id="ts-feature-block" class="ts-feature-block">
-        <div class="container-fluid">
+    <section id="ts-cta-area" class="ts-cta-area no-padding">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6" style="background: url(images/features/feature-block-bg1.jpg);background-size:cover">
-                    <div class="feature-block-intro">
-                        <h2 class="column-title"><span>Sustainability</span> Committed to keep people
-                            healthy & safe</h2>
-                        <p>Benefit of the socie where we operate. A success website obusly needs great design to be one</p>
-                        <a href="#" class="btn btn-primary">Work With Us<i class="icon icon-arrow-right"></i></a>
+                <div class="col-lg-7">
+                    <div class="cta-title text-left">
+                        <h2>
+                            Your Trusted Construction Partner
+                        </h2>
+                        <p>Everything should be as simple as it is, but not simpler as you </p>
                     </div>
-                </div>
-                <div class="col-lg-6" style="background: url(images/features/feature-block-bg2.jpg);background-size:cover">
-                    <div class="feature-block-desc">
-                        <h2 class="feature-block-title">We are best in the field</h2>
-                        <p>Benefit of the socie where we operate. A success website obusly needs great design to be one
-                            of the top 10 IT</p>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="single-block-desc">
-                                    <h3><img src="{{ asset('images/features/best_icon1.png') }}" alt=""> Sustainability</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="single-block-desc">
-                                    <h3><img src="{{ asset('images/features/best_icon2.png') }}" alt=""> Project on time</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="single-block-desc">
-                                    <h3><img src="{{ asset('images/features/best_icon3.png') }}" alt=""> Modern Tech</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="single-block-desc">
-                                    <h3><img src="{{ asset('images/features/best_icon4.png') }}" alt=""> Latest Design</h3>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Col End -->
+                </div><!-- col end -->
+                <div class="col-lg-5 align-self-center">
+                    <div class="cta-btn text-right">
+                        <a href="{{ route('page-contact-us') }}" class="btn btn-primary">
+                            Contact Us
+                            <i class="icon icon-arrow-right"></i>
+                        </a>
                     </div>
-                </div>
+                </div><!-- col end -->
             </div>
+            <!--/ Content row end -->
         </div>
-
+        <!--/ Container end -->
     </section>
-    <!-- Feature Block End -->
+    <!-- Section end -->
 
-    <section id="ts-project-area" class="ts-project-area section-padding">
+    <section id="ts-project-area" class="ts-project-area pt-50 pb-50">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -249,33 +324,6 @@
         </div><!-- .container end -->
 
     </section><!-- Project area end -->
-
-    {{--<section id="ts-cta-area" class="ts-cta-area no-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="cta-title text-left">
-                        <h2>
-                            Your Trusted Construction Partner
-                        </h2>
-                        <p>Everything should be as simple as it is, but not simpler as you </p>
-                    </div>
-                    <!-- Col End -->
-                </div><!-- col end -->
-                <div class="col-lg-5 align-self-center">
-                    <div class="cta-btn text-right">
-                        <a href="{{ route('page-contact-us') }}" class="btn btn-primary">
-                            Contact Us
-                            <i class="icon icon-arrow-right"></i>
-                        </a>
-                    </div>
-                </div><!-- col end -->
-            </div>
-            <!--/ Content row end -->
-        </div>
-        <!--/ Container end -->
-    </section>--}}
-    <!-- Section end -->
 
     {{--<section id="ts-working-process" class="ts-working-process section-padding">
         <div class="container">
@@ -426,7 +474,7 @@
                         </div>
                         <div class="ts-team-info text-center">
                             <h4 class="team-name color-white">Ch Abdul Qayyum Toor</h4>
-                            <p class="team-designation color-white mb-0">CEO & Founder</p>
+                            <p class="team-designation color-white mb-0">Executive</p>
                         </div><!-- Team info 1 end-->
                     </div><!-- Team end-->
                 </div><!-- Col end-->
@@ -437,7 +485,7 @@
                         </div>
                         <div class="ts-team-info text-center">
                             <h4 class="team-name color-white">Saghir Khaki</h4>
-                            <p class="team-designation color-white mb-0">Co Founder</p>
+                            <p class="team-designation color-white mb-0">Executive</p>
                         </div><!-- Team info 1 end-->
                     </div><!-- Team end-->
                 </div><!-- Col end-->
@@ -478,3 +526,24 @@
     <!--/ Partners end -->
 
 @endsection
+@push('footer-js')
+    <script>
+        var owl = $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+@endpush
