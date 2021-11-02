@@ -780,7 +780,7 @@ body.boxed-layout {
   start  call to action
  =================================*/
 .ts-cta-area {
-    background-image: url(../images/cta_img.jpg);
+    background-image: url(../images/cta_img.jpg?v=1.1);
     padding: 55px 0;
     color: #ffffff;
     background-repeat: no-repeat;
