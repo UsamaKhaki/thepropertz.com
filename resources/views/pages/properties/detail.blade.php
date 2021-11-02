@@ -134,7 +134,7 @@
 
 @endsection
 @push('footer-js')
-    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flexslider.css?v=1.1') }}">
     <script src="{{ asset('js/jquery.flexslider.js') }}"></script>
     <script>
         $('#carousel').flexslider({

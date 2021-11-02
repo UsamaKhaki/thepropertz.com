@@ -308,6 +308,20 @@ html[xmlns] .flexslider .slides {
     cursor: default;
 }
 
+
+.flexslider .slides img.img-h-400{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.flexslider .slides img.img-h-100{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
@@ -321,17 +335,10 @@ html[xmlns] .flexslider .slides {
         opacity: 1;
         right: 10px;
     }
-}
-
-.flexslider .slides img.img-h-400{
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-.flexslider .slides img.img-h-100{
-    height: 100px;
-    width: 100%;
-    object-fit: cover;
+    .flexslider .slides img.img-h-400{
+        height: 200px;
+    }
+    .flexslider .slides img.img-h-100{
+        height: 50px;
+    }
 }
