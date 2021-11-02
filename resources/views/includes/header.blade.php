@@ -52,7 +52,7 @@
     <link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
 
     <!--Theme custom css -->
-    <link rel="stylesheet" href="{{ asset('css/style.css?v=1.8') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css?v=1.12') }}">
 
     <!--Theme Responsive css-->
     <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.3') }}">

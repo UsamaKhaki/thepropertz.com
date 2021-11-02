@@ -38,8 +38,8 @@
                             <div class="property_address"><i class="fa fa-map-marker"></i> 123 Lorem Ipsum, 45 sit Atlanta</div>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <div class="float-right">
-                                <div class="property_price">$ 488.00</div>
+                            <div class="float-none float-md-right">
+                                <div class="property_price ml-0 mt-2 mt-md-0">PKR 1,00,000</div>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="single-widgets widget_category mt30">
+                    <div class="single-widgets widget_category mt30 mt-4 mt-md-0">
                         <h4>Categories</h4>
                         <ul>
                             <li><a href="#">Apartement <span>09</span></a></li>
@@ -134,7 +134,7 @@
 
 @endsection
 @push('footer-js')
-    <link rel="stylesheet" href="{{ asset('css/flexslider.css?v=1.1') }}">
+    <link rel="stylesheet" href="{{ asset('css/flexslider.css?v=1.2') }}">
     <script src="{{ asset('js/jquery.flexslider.js') }}"></script>
     <script>
         $('#carousel').flexslider({

@@ -4880,6 +4880,15 @@ ul.navbar-nav {
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 768px) {
+    .icon-checkbox {
+        -moz-columns: 2;
+        columns: 2;
+        -moz-column-gap: 10px;
+        column-gap: 10px;
+    }
+}
+
 .icon-checkbox li {
     font-size: 16px;
     padding: 8px 0;
@@ -5101,4 +5110,13 @@ ul.navbar-nav {
 
 .property_listWp .property_box h3 {
     min-height: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-heading {
+        padding-top: 210px !important;
+    }
+    .property-detail-wrapper{
+        padding: 30px 0 !important;
+    }
 }
