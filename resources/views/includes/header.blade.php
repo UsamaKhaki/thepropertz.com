@@ -52,10 +52,10 @@
     <link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
 
     <!--Theme custom css -->
-    <link rel="stylesheet" href="{{ asset('css/style.css?v=1.12') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css?v=1.13') }}">
 
     <!--Theme Responsive css-->
-    <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.3') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css?v=1.4') }}">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

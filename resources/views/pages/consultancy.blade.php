@@ -46,7 +46,7 @@
                         @endforeach
                     </div> <!-- Accordion End -->
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mt-4 mt-md-0">
                     <h3>Ask a Question</h3>
                     <div class="sidebar-widgets faq-sidebar">
                         <div class="widget widget-faq">

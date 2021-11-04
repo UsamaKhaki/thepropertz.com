@@ -13,6 +13,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+    outline: none !important;
+}
+
 a:focus,
 a:active,
 input,
@@ -5079,7 +5083,7 @@ ul.navbar-nav {
     color: #64b5e2;
     border-bottom: 1px solid #dadada;
     padding-bottom: 10px;
-    margin-bottom: 20px !important  ;
+    margin-bottom: 20px !important;
 }
 
 .property_list {
@@ -5116,7 +5120,8 @@ ul.navbar-nav {
     .banner-heading {
         padding-top: 210px !important;
     }
-    .property-detail-wrapper{
+
+    .property-detail-wrapper {
         padding: 30px 0 !important;
     }
 }

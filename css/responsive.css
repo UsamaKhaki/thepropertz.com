@@ -482,7 +482,7 @@
     }
 
     ul.navbar-nav > li > a {
-        line-height: 60px;
+        line-height: 45px;
     }
 
     ul.navbar-nav > li.dropdown > a:before {
@@ -491,13 +491,14 @@
         content: "\f107";
         right: 15px;
         top: 0;
-        font-size: 25px;
         line-height: 60px;
         color: #fff;
         font-size: 14px;
     }
 
     .navbar-nav {
+        margin-top: 10px;
+        padding-left: 0 !important;
         text-align: left;
     }
 
@@ -524,7 +525,7 @@
     }
 
     .funfact-item li {
-        padding: 40px 20px;
+        padding: 25px 20px;
     }
 
     .ts-service-content {
@@ -657,10 +658,6 @@
         padding: 0 20px;
         font-weight: 500;
         margin-bottom: 30px;
-    }
-
-    .single-funfact {
-        padding-bottom: 40px;
     }
 
     .quote_form {

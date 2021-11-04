@@ -81,34 +81,34 @@
     <section class="ts-funfact section-padding" style="background: url(./images/funfact_bg.jpg);background-size:cover;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms"
+                <div class="col-lg-3 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms"
                      style="visibility: visible; animation-duration: 1.5s; animation-delay: 300ms; animation-name: fadeInUp;">
-                    <div class="single-funfact">
-                        <i class="icon icon-Funfacts"></i>
+                    <div class="single-funfact d-flex d-md-block flex-column align-items-center text-center text-md-left">
+                        <i class="icon icon-Funfacts mr-0 mr-md-3"></i>
                         <h3 class="funfact-title" data-counter="1120">663</h3>
                         <p>Revenue in 2017 (Million)</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms"
+                <div class="col-lg-3 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms"
                      style="visibility: visible; animation-duration: 1.5s; animation-delay: 400ms; animation-name: fadeInUp;">
-                    <div class="single-funfact">
-                        <i class="icon icon-Funfacts-2"></i>
+                    <div class="single-funfact d-flex d-md-block flex-column align-items-center text-center text-md-left">
+                        <i class="icon icon-Funfacts-2 mr-0 mr-md-3"></i>
                         <h3 class="funfact-title" data-counter="1520">900</h3>
                         <p>Collaegues &amp; Counting</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms"
+                <div class="col-lg-3 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms"
                      style="visibility: visible; animation-duration: 1.5s; animation-delay: 500ms; animation-name: fadeInUp;">
-                    <div class="single-funfact">
-                        <i class="icon icon-Funfacts-3"></i>
+                    <div class="single-funfact d-flex d-md-block flex-column align-items-center text-center text-md-left">
+                        <i class="icon icon-Funfacts-3 mr-0 mr-md-3"></i>
                         <h3 class="funfact-title" data-counter="525">311</h3>
                         <p>Successfully Project</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms"
+                <div class="col-lg-3 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms"
                      style="visibility: visible; animation-duration: 1.5s; animation-delay: 600ms; animation-name: fadeInUp;">
-                    <div class="single-funfact">
-                        <i class="icon icon-Funfacts-4"></i>
+                    <div class="single-funfact d-flex d-md-block flex-column align-items-center text-center text-md-left">
+                        <i class="icon icon-Funfacts-4 mr-0 mr-md-3"></i>
                         <h3 class="funfact-title" data-counter="25">15</h3>
                         <p>Year of experience</p>
                     </div>
